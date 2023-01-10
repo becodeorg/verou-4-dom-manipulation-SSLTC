@@ -13,14 +13,29 @@ const articleNode = document.querySelector("article");
 
 for(let student of studentsVerou4) {
     const sectionNode = document.createElement("section");
-    sectionNode.style.backgroundColor = "rgb(" + [getRndInteger(0, 255), getRndInteger(0, 255), getRndInteger(0, 255)].join(",") + ")";
+    let rgbColor = "rgb(" + [getRndInteger(0, 255), getRndInteger(0, 255), getRndInteger(0, 255)].join(",") + ")";
+    sectionNode.style.backgroundColor = rgbColor;
+    //sectionNode.style.backgroundColor = getRndRgb;
 
-    sectionNode.style.backgroundColor = getRndRgb;
-console.log(getRndRgb);
     const txtNode = document.createTextNode(student);
     const paragraphNode = document.createElement("p");
     
-    paragraphNode.style.color = "white";
+    let redgreenblue = rgbColor.substring(4,rgbColor.lastIndexOf(")")).split(",");
+    //let redgreenblue = rgbColor.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/); 1-3
+    let red = parseInt(redgreenblue[0]);
+    let green = parseInt(redgreenblue[1]);
+    let blue = parseInt(redgreenblue[2]);
+
+    let hsp = Math.sqrt(0.299 * (red * red) + 0.587 * (green * green) + 0.114 * (blue * blue));
+console.log(red + " " + green + " " + blue + " " + hsp);
+    if (hsp > 127.5) {
+        paragraphNode.style.color = "black";
+    } 
+    else {
+        paragraphNode.style.color = "white";
+    }
+
+    
     paragraphNode.appendChild(txtNode);
     
     sectionNode.appendChild(paragraphNode);
