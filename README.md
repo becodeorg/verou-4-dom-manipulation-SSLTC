@@ -27,6 +27,7 @@ ___
 
 - Adding a section with random backcolor to the article for each student with their name in a paragraph
 - Change the textcolor to white/black when the backgroundcolor is dark/light
+- Change order of the elements on every page load
 
 <a href="./Create">Creating Nodes link</a>
 
