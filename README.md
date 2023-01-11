@@ -61,3 +61,14 @@ ___
 
 ___
 
+### Forms
+
+- A keyup listener on the first input field, so that once you type a letter in this field, it goes into the <span id="display-firstname">
+- A keyup listener on the second input (the number input), so that if the age is below 18 the content of the section a-hard-truth remains hidden, otherwise show them this hard to swallow fact
+- Turn the field red if the password is too short (less than 6 characters) or if the password and its confirmation do not match
+- A change listener on the <select> field to toggle a dark mode on the whole page
+
+<a href="./Forms">Forms link</a>
+
+___
+
