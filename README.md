@@ -29,7 +29,7 @@ ___
 - Change the textcolor to white/black when the backgroundcolor is dark/light
 - Change order of the elements on every page load
 
-<a href="./Create">Creating Nodes link</a>
+<a href="./Create">Create link</a>
 
 ___
 
@@ -38,3 +38,18 @@ ___
 - Select the last child of the <ol> tag and put it at the beginning of the list
 - Move the <h2> of the third section in the second one and vice-versa
 - Delete the last section from the DOM, we don't need it anyways
+
+<a href="./Navigate">Navigate link</a>
+
+___
+
+### Events
+
+- Everytime the user clicks on one of the action squares
+    - Create a new <div> with a class .displayedsquare and the corresponding clicked color in the div above (.displayedsquare-wrapper)
+    - Create a new <li> in the log below to state when the action was done
+
+<a href="./Events">Events link</a>
+
+___
+
