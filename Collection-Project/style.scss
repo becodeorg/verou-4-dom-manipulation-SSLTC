@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    main {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: auto auto auto auto auto;
+
+        #card {
+            width: 200px;
+
+            #bookcover {
+                max-width: 100%;
+            }
+    
+            #itemBody {
+                padding: 10px;
+    
+                #releaseDate {
+                    padding: 5px;
+                    font-size: 0.6rem;
+                    background-color: #ffff00;
+                }
+        
+                #genre {
+                    padding: 5px;
+                    font-size: 0.6rem;
+                    background-color: #00d5ff;
+                }
+    
+                #title {
+                    font-size: 1rem;
+                }
+    
+                #author {
+                    font-size: 0.6rem;
+                }
+    
+                #description {
+                    font-size: 1rem;
+                    height: 200px;
+                    overflow-y: scroll;
+                }
+        
+                #iconBookstore {
+                    width: 25%;
+                    &:hover { cursor: hand; }
+                }
+            }
+        }
+    }
+}

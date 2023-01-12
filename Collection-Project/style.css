@@ -1,3 +1,44 @@
-
-
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body main {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: auto auto auto auto auto;
+}
+body main #card {
+  width: 200px;
+}
+body main #card #bookcover {
+  max-width: 100%;
+}
+body main #card #itemBody {
+  padding: 10px;
+}
+body main #card #itemBody #releaseDate {
+  padding: 5px;
+  font-size: 0.6rem;
+  background-color: #ffff00;
+}
+body main #card #itemBody #genre {
+  padding: 5px;
+  font-size: 0.6rem;
+  background-color: #00d5ff;
+}
+body main #card #itemBody #title {
+  font-size: 1rem;
+}
+body main #card #itemBody #author {
+  font-size: 0.6rem;
+}
+body main #card #itemBody #description {
+  font-size: 1rem;
+  height: 200px;
+  overflow-y: scroll;
+}
+body main #card #itemBody #iconBookstore {
+  width: 25%;
+}
+body main #card #itemBody #iconBookstore:hover {
+  cursor: hand;
+}/*# sourceMappingURL=style.css.map */

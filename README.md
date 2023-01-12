@@ -75,6 +75,8 @@ ___
 ### Collections
 
 - Created a book collection of 10 books
+- Created a card for each object with javascript
+- Moved the const collection from the script.js to a new file called collection.js and imported that collection into the script file
 
 <a href="./Collection-Project">Collection-Project link</a>
 
