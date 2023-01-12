@@ -72,3 +72,11 @@ ___
 
 ___
 
+### Collections
+
+- Created a book collection of 10 books
+
+<a href="./Collection-Project">Collection-Project link</a>
+
+___
+
