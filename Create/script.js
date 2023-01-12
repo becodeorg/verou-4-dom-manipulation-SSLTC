@@ -1,10 +1,5 @@
 import { getRndRgb } from "../modules/getRndColor.js";
 
-function getRndInteger(min, max) {
-    let rndInt = Math.floor(Math.random() * (max - min + 1) ) + min;
-    return rndInt;
-}
-
 const studentsVerou4 = ["Sven", "Juraj", "Beatrice", "James", "Vincent", "Seppe", "Niels", "Toon", "Ward", "Jean M.", "Ada", "Rachid", "Sofie", "Marieke", "Tesse", "David", "Sander", "Raoul", "Xander", "Lisa", "Thomas", "Jitske", "Freke", "Sarah", "Celine", "Nick", "Claire", "Pious", "Yousra"];
 //studentsVerou4.sort();
 
@@ -17,9 +12,9 @@ const articleNode = document.querySelector("article");
 for(let student of studentsVerou4) {
     const sectionNode = document.createElement("section");
     
-    let rgbColor = "rgb(" + [getRndInteger(0, 255), getRndInteger(0, 255), getRndInteger(0, 255)].join(",") + ")";
+    let rgbColor = getRndRgb();
+    console.log(rgbColor);
     sectionNode.style.backgroundColor = rgbColor;
-    //sectionNode.style.backgroundColor = getRndRgb;
 
     const txtNode = document.createTextNode(student);
     const paragraphNode = document.createElement("p");
