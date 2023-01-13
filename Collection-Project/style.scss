@@ -1,13 +1,42 @@
+@use "modules/mediaQueries" as mq;
+
 body {
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+    h1 {
+        padding: 5px;
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    nav {
+        #lblSearchOnTitle {
+            margin-left: 5px;
+        }
+    }
+
     main {
+        //margin: auto;
+        max-width: 80vw;
         display: grid;
         gap: 25px;
-        grid-template-columns: auto auto auto auto auto;
+
+        grid-template-columns: auto;
+        @include mq.screen-min(mq.$screen-md){
+            grid-template-columns: auto auto auto;
+        }
+        @include mq.screen-min(mq.$screen-xl){
+            grid-template-columns: auto auto auto auto;
+        }
 
         #card {
-            width: 200px;
+            //width: 200px;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: green;
+            }
 
             #bookcover {
                 max-width: 100%;
@@ -29,22 +58,24 @@ body {
                 }
     
                 #title {
+                    margin-bottom: 0px;
                     font-size: 1rem;
                 }
     
                 #author {
+                    margin-top: 0px;
                     font-size: 0.6rem;
+                    color: #808080;
                 }
     
                 #description {
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     height: 200px;
                     overflow-y: scroll;
                 }
         
                 #iconBookstore {
-                    width: 25%;
-                    &:hover { cursor: hand; }
+                    width: 3rem;
                 }
             }
         }

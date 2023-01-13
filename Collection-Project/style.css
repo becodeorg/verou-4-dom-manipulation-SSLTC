@@ -1,13 +1,35 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body h1 {
+  padding: 5px;
+  background-color: #000000;
+  color: #ffffff;
+}
+body nav #lblSearchOnTitle {
+  margin-left: 5px;
+}
 body main {
+  max-width: 80vw;
   display: grid;
   gap: 25px;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto;
+}
+@media (min-width: 768px) {
+  body main {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (min-width: 1200px) {
+  body main {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 body main #card {
-  width: 200px;
+  margin-top: 20px;
+}
+body main #card:hover {
+  background-color: green;
 }
 body main #card #bookcover {
   max-width: 100%;
@@ -26,19 +48,19 @@ body main #card #itemBody #genre {
   background-color: #00d5ff;
 }
 body main #card #itemBody #title {
+  margin-bottom: 0px;
   font-size: 1rem;
 }
 body main #card #itemBody #author {
+  margin-top: 0px;
   font-size: 0.6rem;
+  color: #808080;
 }
 body main #card #itemBody #description {
-  font-size: 1rem;
+  font-size: 0.8rem;
   height: 200px;
   overflow-y: scroll;
 }
 body main #card #itemBody #iconBookstore {
-  width: 25%;
-}
-body main #card #itemBody #iconBookstore:hover {
-  cursor: hand;
+  width: 3rem;
 }/*# sourceMappingURL=style.css.map */
