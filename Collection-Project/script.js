@@ -8,6 +8,7 @@ elHead.appendChild(elHeading1);
 const elNav = document.querySelector("nav");
 const elInputSearchOnTitle = document.createElement("input");
 elInputSearchOnTitle.setAttribute("id", "inputSearchOnTitle");
+elInputSearchOnTitle.addEventListener("keyup", CreateCards);
 
 const elLabelSearchOnTitle = document.createElement("label");
 elLabelSearchOnTitle.setAttribute("for", "inputSearchOnTitle");
@@ -15,9 +16,23 @@ elLabelSearchOnTitle.setAttribute("id", "lblSearchOnTitle");
 elLabelSearchOnTitle.textContent = "Search on title";
 elNav.append(elInputSearchOnTitle, elLabelSearchOnTitle);
 
-const elGrid = document.querySelector("main");
+function alertTest() {
+    //alert("test");
+}
+
+CreateCards();
+
+function CreateCards() {
+    const elGrid = document.querySelector("main");
+    elGrid.setAttribute("id", "gridContainer");
+    elGrid.innerHTML = "";
 
 collectionBooks.forEach(item => {
+    if(elInputSearchOnTitle.textContent !== "") {
+        if(item.Title.indexOf(elInputSearchOnTitle.textContent) == -1) {
+            return;
+        }
+    }
     const elGridItem = document.createElement("div");
     elGridItem.setAttribute("id", "card");
 
@@ -82,3 +97,4 @@ collectionBooks.forEach(item => {
 
     elGrid.appendChild(elGridItem);
 });
+}
