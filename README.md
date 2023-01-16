@@ -77,6 +77,8 @@ ___
 - Created a book collection of 10 books
 - Created a card for each object with javascript
 - Moved the const collection from the script.js to a new file called collection.js and imported that collection into the script file
+- When you hover over a card it scalles to 1.1 gets a box-shadow and white backgroundcolor while the grid and other cards get a grey backgroundcolor
+- Input field in the header to search on title
 
 <a href="./Collection-Project">Collection-Project link</a>
 
