@@ -2,28 +2,6 @@ export { collectionBooks };
 
 const collectionBooks = [
     {
-        Title: "Omringd door idioten",
-        Author: "Thomas Erikson",
-        Publisher: "Harpercollins",
-        Genre: "Non Fiction",
-        Description: "Welke gedragsstijl is de jouwe? Drijf je collega je tot waanzin met zijn overdreven liefde voor details? Botst het gematigde karakter van je geliefde met je eigen enthousiasme? Sommige mensen beweren dat zij omringd worden door idioten. Zij begrijpen hun collega’s of familie niet, hoe ze ook hun best doen. Als je echter meer inzicht hebt in het gedrag van de ander, en dat van jezelf, kun je beter met de ander communiceren. Een veelgebruikte methode daarvoor is het aanduiden van gedragsstijlen met kleuren. Ben je bijvoorbeeld rood, dan wil je snel tot de kern van de zaak komen. Heb je voornamelijk gele kanten, dan ben je snel enthousiast, groen staat voor stabiliteit en blauwe eigenschappen hebben te maken met informatie en details. Thomas Erikson leert je om op praktische en eenvoudige wijze dit kleurenschema toe te passen. Omringd door idioten helpt je collega’s, vrienden en familie beter te begrijpen.",
-        ReleaseDate: "20/12/2021",
-        Link: "https://www.standaardboekhandel.be/p/omringd-door-idioten-9789402710236",
-        EAN: 9789402710236
-    },
-
-    {
-        Title: "Omringd door narcisten",
-        Author: "Thomas Erikson",
-        Publisher: "Harpercollins",
-        Genre: "Non Fiction",
-        Description: "We kennen allemaal wel een narcist. Iemand met een enorm ego, iemand die constant om aandacht vraagt en altijd overtuigd is van zijn gelijk. Narcisten willen alles en iedereen controleren, en doen waar ze zin in hebben zonder aan anderen te denken. Ze zijn, kortom, héél vermoeiend. Aan de hand van hetzelfde vierkleurensysteem dat Omringd door idioten een internationale bestseller maakte, beschrijft Thomas Erikson narcistisch gedrag en de gevolgen ervan – voor jou en voor de samenleving als geheel. Omringd door narcisten biedt je alle tools die je nodig hebt om met narcisten om te gaan, zodat je een gelukkiger, bevredigender en succesvoller leven kunt leiden.",
-        ReleaseDate: "23/03/2022",
-        Link: "https://www.standaardboekhandel.be/p/omringd-door-narcisten-9789402709711",
-        EAN: 9789402709711
-    },
-
-    {
         Title: "De edele kunst van not giving a f*ck",
         Author: "Mark Manson",
         Publisher: "Lev.",
