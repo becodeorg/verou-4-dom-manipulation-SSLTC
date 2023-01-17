@@ -87,6 +87,9 @@ ___
 ### DOM drill
 
 - Listed all the children of the list
+- A loop over element nodes, move "Fast and Furious" as first in the list and give it a class "important", added a click event on every item witch shows an alert with the name of the element and a personal text for "Fast and Furious", at last removing of duplicates
+- Added a div element before the list element witch containing an select element with two options
+- Showing only the important listitems when selected
 
 <a href="./DOM-drill">Collection-Project link</a>
 
