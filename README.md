@@ -90,6 +90,7 @@ ___
 - A loop over element nodes, move "Fast and Furious" as first in the list and give it a class "important", added a click event on every item witch shows an alert with the name of the element and a personal text for "Fast and Furious", at last removing of duplicates
 - Added a div element before the list element witch containing an select element with two options
 - Showing only the important listitems when selected
+- When pressing key (R) the list get random sorted while the important items stay on top, each (D) key press will duplicate the "Fast and Furious" item
 
 <a href="./DOM-drill">Collection-Project link</a>
 
