@@ -63,4 +63,35 @@ elSelect.addEventListener("change", (e) => {
 
 elDiv.appendChild(elSelect);
 
+// When pressing the (R) key of the keyboard the list get sorted in a random order, however 
+// Fast and Furious remain the first element (most important franchise ever, remember?)
 
+document.body.addEventListener("keyup", (e) => {
+    switch(e.code) {
+        case "KeyR":
+            
+            //const elNormalFranchises = Array.from(document.querySelectorAll('li')).find(el => el.classList.contains("important") !== true);
+
+            listItems.forEach(li => {
+                let rnd = Math.floor(Math.random() * elList.childElementCount);
+
+                elList.appendChild(li, listItems[rnd]);
+
+                if(li.classList !== undefined) {
+                    if(li.classList.contains("important") === true) {
+                        elList.insertBefore(li, elList.firstChild); 
+                    }
+                }
+            });
+
+            break;
+        case "KeyD":
+            // div[contains(., 'Hello')]
+            const elFastFurious = document.evaluate("//li[text() = 'Fast and Furious']", document, null, XPathResult.ANY_TYPE, null).iterateNext();
+
+            const clonedNode = elFastFurious.cloneNode(true);
+            elList.insertBefore(clonedNode, elList.firstChild);
+
+            break;
+    }
+});
